@@ -11,3 +11,5 @@ function fetchHtml() {
         setInner("sidebar-container",html);    
     });
 }
+
+fetchHtml();
