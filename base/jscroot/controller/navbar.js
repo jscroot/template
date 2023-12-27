@@ -19,10 +19,9 @@ export function showMenu(headerToggle, navbarId){
 /*==================== LINK ACTIVE ====================*/
 export function activeLink(className){//'.nav__link'
     const linkColor = document.querySelectorAll(className);
-    linkColor.forEach(l => {l.addEventListener('click', function() { colorLink(linkColor); } );});
-}
-function colorLink(linkColor){
-    linkColor.forEach(l => l.classList.remove('active'));
-    this.classList.add('active');
+    linkColor.forEach(l => {l.addEventListener('click', function() { 
+        linkColor.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+    } );});
 }
 
