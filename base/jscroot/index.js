@@ -6,13 +6,6 @@ import { showMenu,activeLink } from "https://jscroot.github.io/template/base/jsc
 
 
 insertHTML(url.header,"header__container");
-insertHTML(url.navbar,"navbar");
+insertHTML(url.navbar,"navbar").then(showMenu('header-toggle','navbar')).then(activeLink('.nav__link'));
 insertHTML(url.content,"content");
 
-
-runAfterDOM(runAfter);
-
-function runAfter(){
-    showMenu('header-toggle','navbar');
-    activeLink('.nav__link');
-}
