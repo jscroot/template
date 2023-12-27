@@ -15,6 +15,7 @@ function runAfterHeader(){
 function runAfterNavbar(){
     showMenu('header-toggle','navbar');
     activeLink('.nav__link');
+    activeLink('.nav__dropdown-item');
 }
 
 function runAfterContent(){
