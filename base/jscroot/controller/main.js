@@ -12,7 +12,7 @@ export function runAfterHeader(){
     insertHTML(url.navbar,"navbar",runAfterNavbar);
 }
 
-export function runAfterNavbar(){
+function runAfterNavbar(){
     showMenu('header-toggle','navbar');
     activeLink('.nav__link');
     activeLink('.nav__dropdown-item');
