@@ -2,7 +2,7 @@ import { insertHTML } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.4/croot.
 import { url } from "https://jscroot.github.io/template/base/jscroot/url/config.js";
 import { getURLContentJS } from "https://jscroot.github.io/template/base/jscroot/url/content.js";
 import { showMenu,activeLink } from "https://jscroot.github.io/template/base/jscroot/controller/navbar.js";
-import { getContentURL } from "https://jscroot.github.io/template/base/jscroot/controller/content.js";
+import { getContentURL } from "https://jscroot.github.io/template/base/jscroot/url/content.js";
 
 
 export function runAfterHashChange(evt){
