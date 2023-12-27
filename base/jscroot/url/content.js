@@ -1,4 +1,4 @@
-import { url } from "https://jscroot.github.io/template/base/jscroot/config.js";
+import { url } from "https://jscroot.github.io/template/base/jscroot/url/config.js";
 import {getHash} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.2/croot.js";
 
 
