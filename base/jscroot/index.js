@@ -18,7 +18,3 @@ function runAfterNavbar(){
     showMenu('header-toggle','navbar');
     activeLink('.nav__link');
 }
-
-runAfterAll(runMain);
-
-
