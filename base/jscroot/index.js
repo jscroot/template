@@ -5,10 +5,13 @@ import { showMenu,activeLink } from "https://jscroot.github.io/template/base/jsc
 
 
 
-await insertHTML(url.header,"header__container");
-await insertHTML(url.navbar,"navbar");
-showMenu('header-toggle','navbar');
-activeLink('.nav__link');
+async function loadComponent(){
+    await insertHTML(url.header,"header__container");
+    await insertHTML(url.navbar,"navbar");
+    showMenu('header-toggle','navbar');
+    activeLink('.nav__link');
+}
+loadComponent();
 
 insertHTML(url.content,"content");
 
