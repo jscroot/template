@@ -19,9 +19,9 @@ export function showMenu(headerToggle, navbarId){
 /*==================== LINK ACTIVE ====================*/
 export function activeLink(className){//'.nav__link'
     const linkColor = document.querySelectorAll(className);
-    linkColor.forEach(l => l.addEventListener('click', colorLink));
+    linkColor.forEach(l => l.addEventListener('click', colorLink(linkColor)));
 }
-function colorLink(){
+function colorLink(linkColor){
     linkColor.forEach(l => l.classList.remove('active'));
     this.classList.add('active');
 }

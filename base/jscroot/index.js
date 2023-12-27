@@ -1,5 +1,4 @@
 import { insertHTML } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.4/croot.js";
-import {runAfterAll} from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.1/croot.js";
 import { url } from "https://jscroot.github.io/template/base/jscroot/config.js";
 import { showMenu,activeLink } from "https://jscroot.github.io/template/base/jscroot/controller/navbar.js";
 
@@ -11,7 +10,6 @@ insertHTML(url.content,"content",runAfterContent);
 
 function runAfterHeader(){
     insertHTML(url.navbar,"navbar",runAfterNavbar);
-    
 }
 
 function runAfterNavbar(){
