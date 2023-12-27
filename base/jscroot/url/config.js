@@ -1,14 +1,14 @@
 export const croot = "https://jscroot.github.io/template/base/";
 
 const folder={
-    html:"html/",
+    template:"jscroot/template",
     controller : "jscroot/controller/",
     view : "jscroot/view/",
-    content : "html/content"
+    content : "jscroot/template/content"
 }
 
 export const controllerfolder = croot+folder.controller;
-const templatefolder=croot+folder.html;
+const templatefolder=croot+folder.template;
 
 export const url={
     content : templatefolder+"content/",
