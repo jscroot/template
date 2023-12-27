@@ -6,12 +6,17 @@ import { showMenu,activeLink } from "https://jscroot.github.io/template/base/jsc
 
 
 async function loadComponent(){
-    await insertHTML(url.header,"header__container");
-    await insertHTML(url.navbar,"navbar");
+    insertHTML(url.header,"header__container");
+    insertHTML(url.navbar,"navbar");
+    insertHTML(url.content,"content");
+}
+
+async function runMain(){
+    await loadComponent();
     showMenu('header-toggle','navbar');
     activeLink('.nav__link');
 }
-loadComponent();
 
-insertHTML(url.content,"content");
+runMain();
+
 
