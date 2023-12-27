@@ -7,7 +7,7 @@ import { showMenu,activeLink } from "https://jscroot.github.io/template/base/jsc
 
 insertHTML(url.header,"header__container",runAfterHeader);
 
-insertHTML(url.content,"content");
+insertHTML(url.content,"content",runAfterContent);
 
 function runAfterHeader(){
     insertHTML(url.navbar,"navbar",runAfterNavbar);
@@ -17,4 +17,8 @@ function runAfterHeader(){
 function runAfterNavbar(){
     showMenu('header-toggle','navbar');
     activeLink('.nav__link');
+}
+
+function runAfterContent(){
+    console.log("selesai get content");
 }
