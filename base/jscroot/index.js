@@ -5,8 +5,7 @@ import { showMenu,activeLink } from "https://jscroot.github.io/template/base/jsc
 
 
 
-insertHTML(url.header,"header__container");
-
+await insertHTML(url.header,"header__container");
 await insertHTML(url.navbar,"navbar");
 showMenu('header-toggle','navbar');
 activeLink('.nav__link');
