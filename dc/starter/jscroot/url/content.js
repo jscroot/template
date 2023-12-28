@@ -1,36 +1,35 @@
-import { url } from "https://jscroot.github.io/template/base/jscroot/url/config.js";
 import {getHash} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.2/croot.js";
-
+import { url } from "https://jscroot.github.io/template/base/jscroot/url/config.js";
 
 export function getContentURL(){
     let hashlink=parseInt(getHash());
     switch (hashlink) {
         case 1:
-            return url.content+"home.html";
+            return url.template.content+"home.html";
         case 21:
-            return url.content+"profile/passwords.html";
+            return url.template.content+"profile/passwords.html";
         case 22:
-            return url.content+"profile/mail.html";
+            return url.template.content+"profile/mail.html";
         case 23:
-            return url.content+"profile/accounts.html";
+            return url.template.content+"profile/accounts.html";
         case 3:
-            return url.content+"messages.html";
+            return url.template.content+"messages.html";
         case 41:
-            return url.content+"notifications/blocked.html";
+            return url.template.content+"notifications/blocked.html";
         case 42:
-            return url.content+"notifications/silenced.html";
+            return url.template.content+"notifications/silenced.html";
         case 43:
-            return url.content+"notifications/publish.html";
+            return url.template.content+"notifications/publish.html";
         case 44:
-            return url.content+"notifications/program.html";
+            return url.template.content+"notifications/program.html";
         case 5:
-            return url.content+"explore.html";
+            return url.template.content+"explore.html";
         case 6:
-            return url.content+"saved.html";
+            return url.template.content+"saved.html";
         case 7:
-            return url.content+"logout.html";
+            return url.template.content+"logout.html";
         default:
-            return url.content+"home.html";
+            return url.template.content+"home.html";
     }
 
 }
