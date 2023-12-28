@@ -7,6 +7,7 @@ import { getContentURL } from "https://jscroot.github.io/template/dc/starter/jsc
 
 
 export function runAfterHashChange(evt){
+    console.log("runAfterHashChange");
     insertHTML(getContentURL(),"content",runAfterContent);
 }
 
