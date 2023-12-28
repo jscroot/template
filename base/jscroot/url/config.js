@@ -1,3 +1,4 @@
+//please always use trailing slash(/) for folder or extension for file.
 export const croot = "https://jscroot.github.io/template/base/";
 
 const folder={
