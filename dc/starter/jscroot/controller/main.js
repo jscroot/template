@@ -1,4 +1,5 @@
 import { insertHTML } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.4/croot.js";
+import {addScriptInBody} from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.3/croot.js";
 
 import { url } from "https://jscroot.github.io/template/dc/starter/jscroot/url/config.js";
 import { getURLContentJS } from "https://jscroot.github.io/template/dc/starter/jscroot/url/content.js";
@@ -10,31 +11,31 @@ export function runAfterHashChange(evt){
 }
 
 export function runAfterSidebar(){
+    console.log("runaftersidebar");
     insertHTML(url.template.settings,"offcanvas",runAfterSettings);
 }
 
 function runAfterSettings(){
+    console.log("runaftersidebar");
     insertHTML(url.template.header,"app_header",runAfterHeader);
 }
 
 function runAfterHeader(){
+    console.log("runaftersidebar");
     insertHTML(url.template.search,"searchModal",runAfterSearch);
 }
 
 function runAfterSearch(){
+    console.log("runaftersidebar");
     insertHTML(url.template.footer,"footer",runAfterFooter);
 }
 
 function runAfterFooter(){
-    addScript("assets/js/SimpleBar.js");
-    addScript("assets/js/app.js");
+    console.log("runaftersidebar");
+    addScriptInBody("assets/js/SimpleBar.js");
+    addScriptInBody("assets/js/app.js");
 }
 
-function addScript( src ) {
-    var s = document.createElement( 'script' );
-    s.setAttribute( 'src', src );
-    document.body.appendChild( s );
-}
 
 export async function runAfterContent(){
     let urljs = getURLContentJS();

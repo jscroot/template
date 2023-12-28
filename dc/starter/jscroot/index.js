@@ -9,8 +9,12 @@ import {runAfterSidebar,runAfterContent,runAfterHashChange} from "https://jscroo
 
 insertHTML(url.template.header,"sidebarcontainer",runAfterSidebar);
 
+let urlcontent=getContentURL();
+console.log(urlcontent);
+if (urlcontent){
+    insertHTML(getContentURL(),"content",runAfterContent);
+}
 
-insertHTML(getContentURL(),"content",runAfterContent);
 
 onHashChange(runAfterHashChange);
 
