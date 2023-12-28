@@ -16,22 +16,22 @@ export function runAfterSidebar(){
 }
 
 function runAfterSettings(){
-    console.log("runaftersidebar");
+    console.log("runAfterSettings");
     insertHTML(url.template.header,"app_header",runAfterHeader);
 }
 
 function runAfterHeader(){
-    console.log("runaftersidebar");
+    console.log("runAfterHeader");
     insertHTML(url.template.search,"searchModal",runAfterSearch);
 }
 
 function runAfterSearch(){
-    console.log("runaftersidebar");
+    console.log("runAfterSearch");
     insertHTML(url.template.footer,"footer",runAfterFooter);
 }
 
 function runAfterFooter(){
-    console.log("runaftersidebar");
+    console.log("runAfterFooter");
     addScriptInBody("assets/js/SimpleBar.js");
     addScriptInBody("assets/js/app.js");
 }
