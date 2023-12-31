@@ -15,6 +15,10 @@ export function getContentURL(){
             return url.template.content+"dashboard/crm.html";
         case "dashboard/banking":
             return url.template.content+"dashboard/banking.html";
+        case "dashboard/icons":
+            return url.template.content+"dashboard/icons.html";
+        case "dashboard/map":
+            return url.template.content+"dashboard/map.html";
         case "about":
             return url.template.content+"about.html";
         case "calander":
@@ -43,6 +47,40 @@ export function getContentURL(){
             return url.template.content+"projects/home.html";
         case "table/advanced":
             return url.template.content+"table/advanced.html";
+        case "table/basic":
+            return url.template.content+"table/basic.html";
+        case "chart/apex":
+            return url.template.content+"chart/apex.html";
+        case "chart/chartjs":
+            return url.template.content+"chart/chartjs.html";
+        case "forms/checkbox":
+            return url.template.content+"forms/checkbox.html";
+        case "forms/datepicker":
+            return url.template.content+"forms/datepicker.html";
+        case "forms/file":
+            return url.template.content+"forms/file.html";
+        case "forms/input":
+            return url.template.content+"forms/input.html";
+        case "forms/inputgroup":
+            return url.template.content+"forms/inputgroup.html";
+        case "forms/inputlayout":
+            return url.template.content+"forms/inputlayout.html";
+        case "forms/mask":
+            return url.template.content+"forms/mask.html";
+        case "forms/radio":
+            return url.template.content+"forms/radio.html";
+        case "forms/repeater":
+            return url.template.content+"forms/repeater.html";
+        case "forms/select":
+            return url.template.content+"forms/select.html";
+        case "forms/switch":
+            return url.template.content+"forms/switch.html";
+        case "forms/textarea":
+            return url.template.content+"forms/textarea.html";
+        case "forms/validation":
+            return url.template.content+"forms/validation.html";
+        case "forms/wizard":
+            return url.template.content+"forms/wizard.html";
         default:
             return url.template.content+"dashboard/home.html";
     }
