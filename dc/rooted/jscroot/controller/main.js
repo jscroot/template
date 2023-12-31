@@ -34,6 +34,8 @@ function runAfterFooter(){
 
 function runAfterUserNavbar(){
     console.log("runAfterUserNavbar"); 
+    addScriptInBody("assets/js/jquery-3.6.0.min.js");
+    addScriptInBody("assets/js/rt-plugins.js");
     addScriptInBody("assets/js/app.js");
 }
 
