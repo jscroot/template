@@ -31,10 +31,18 @@ export function getContentURL(){
             return url.template.content+"utility/settings.html";
         case "utility/pricing":
             return url.template.content+"utility/pricing.html";
+        case "utility/blog":
+            return url.template.content+"utility/blog.html";
+        case "utility/blankpage":
+            return url.template.content+"utility/blankpage.html";
+        case "utility/profile":
+            return url.template.content+"utility/profile.html";
         case "projects/details":
             return url.template.content+"projects/details.html";
         case "projects/home":
             return url.template.content+"projects/home.html";
+        case "table/advanced":
+            return url.template.content+"table/advanced.html";
         default:
             return url.template.content+"dashboard/home.html";
     }
