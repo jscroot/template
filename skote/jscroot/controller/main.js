@@ -8,8 +8,9 @@ import { getContentURL } from "https://jscroot.github.io/template/skote/jscroot/
 
 function runAfterSidebar(){
     console.log("runaftersidebar");
-    //addScriptInBody("assets/js/SimpleBar.js");
-    //addScriptInBody("assets/js/jquery-3.6.0.min.js");
+    addScriptInBody("assets/libs/metismenu/metisMenu.min.js");
+    addScriptInBody("assets/libs/simplebar/simplebar.min.js");
+    addScriptInBody("assets/libs/node-waves/waves.min.js");
     //insertHTML(url.template.settings,"offcanvas",runAfterSettings);
 }
 
