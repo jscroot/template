@@ -6,13 +6,13 @@ export function getContentURL(){
     console.log("link hash:"+hashlink);
     switch (hashlink) {
         case "home":
-            return url.template.content+"home.html";
+            return url.template.content+"dashboard/home.html";
         case "about":
             return url.template.content+"about.html";
         case "profile/info":
             return url.template.content+"profile/info.html";
         default:
-            return url.template.content+"home.html";
+            return url.template.content+"dashboard/home.html";
     }
 
 }
