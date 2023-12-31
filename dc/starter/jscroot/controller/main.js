@@ -1,4 +1,4 @@
-import { insertHTML } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.5/croot.js";
+import { insertHTML } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.6/croot.js";
 import {addScriptInBody} from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.3/croot.js";
 
 import { url } from "https://jscroot.github.io/template/dc/starter/jscroot/url/config.js";
