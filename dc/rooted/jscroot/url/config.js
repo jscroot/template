@@ -14,7 +14,8 @@ export const url={
         search:folder.template+"search.html" ,
         settings:folder.template+"settings.html" ,
         sidebar:folder.template+"sidebar.html" ,
-        footer:folder.template+"footer.html" 
+        footer:folder.template+"footer.html", 
+        usernavbar:folder.template+"usernavbar.html"
     },
     controller:{
         main : folder.controller+"main.js",
