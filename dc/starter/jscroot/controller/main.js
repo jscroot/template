@@ -8,6 +8,7 @@ import { getContentURL } from "https://jscroot.github.io/template/dc/starter/jsc
 
 export function runAfterSidebar(){
     console.log("runaftersidebar");
+    addScriptInBody("assets/js/SimpleBar.js");
     insertHTML(url.template.settings,"offcanvas",runAfterSettings);
 }
 
@@ -26,9 +27,8 @@ function runAfterSearch(){
     insertHTML(url.template.footer,"footer",runAfterFooter);
 }
 
-async function runAfterFooter(){
-    console.log("runAfterFooter");
-    await addScriptInBody("assets/js/SimpleBar.js");
+function runAfterFooter(){
+    console.log("runAfterFooter"); 
     addScriptInBody("assets/js/app.js");
 }
 
