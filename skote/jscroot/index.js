@@ -3,12 +3,12 @@ import {onHashChange} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.4/croot.
 
 import { url } from "https://jscroot.github.io/template/skote/jscroot/url/config.js";
 import { getContentURL } from "https://jscroot.github.io/template/skote/jscroot/url/content.js";
-import {runAfterSidebar,runAfterContent,runAfterHashChange} from "https://jscroot.github.io/template/skote/jscroot/controller/main.js";
+import {runAfterHeader,runAfterContent,runAfterHashChange} from "https://jscroot.github.io/template/skote/jscroot/controller/main.js";
 
 
 
-insertHTML(url.template.sidebar,"sidebarcontainer",runAfterSidebar);
-insertHTML(getContentURL(),"content_layout",runAfterContent);
+insertHTML(url.template.header,"page-topbar",runAfterHeader);
+insertHTML(getContentURL(),"content_container",runAfterContent);
 onHashChange(runAfterHashChange);
 
 

@@ -6,7 +6,7 @@ import { getURLContentJS } from "https://jscroot.github.io/template/skote/jscroo
 import { getContentURL } from "https://jscroot.github.io/template/skote/jscroot/url/content.js";
 
 
-export function runAfterSidebar(){
+function runAfterSidebar(){
     console.log("runaftersidebar");
     //addScriptInBody("assets/js/SimpleBar.js");
     //addScriptInBody("assets/js/jquery-3.6.0.min.js");
@@ -19,9 +19,9 @@ function runAfterSettings(){
     insertHTML(url.template.header,"app_header",runAfterHeader);
 }
 
-function runAfterHeader(){
+export function runAfterHeader(){
     console.log("runAfterHeader");
-    insertHTML(url.template.search,"searchModal",runAfterSearch);
+    //insertHTML(url.template.search,"searchModal",runAfterSearch);
 }
 
 function runAfterSearch(){
