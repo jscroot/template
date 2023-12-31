@@ -9,13 +9,13 @@ import { getContentURL } from "https://jscroot.github.io/template/skote/jscroot/
 function runAfterSidebar(){
     console.log("runaftersidebar");
     addScriptInBody("assets/libs/metismenu/metisMenu.min.js");
+    addScriptInBody("assets/libs/node-waves/waves.min.js");
     insertHTML(url.template.rightbar,"right_bar",runAfterRightbar);
 }
 
 function runAfterRightbar(){
     console.log("runAfterRightbar");
     addScriptInBody("assets/libs/simplebar/simplebar.min.js");
-    addScriptInBody("assets/libs/node-waves/waves.min.js");
     addScriptInBody("assets/js/app.js");
     //insertHTML(url.template.header,"app_header",runAfterHeader);
 }
