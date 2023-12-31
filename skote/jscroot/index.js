@@ -6,7 +6,7 @@ import { getContentURL } from "https://jscroot.github.io/template/skote/jscroot/
 import {runAfterHeader,runAfterContent,runAfterHashChange} from "https://jscroot.github.io/template/skote/jscroot/controller/main.js";
 
 
-
+//addScriptInBody("assets/libs/simplebar/simplebar.min.js");
 insertHTML(url.template.header,"page-topbar",runAfterHeader);
 insertHTML(getContentURL(),"content_container",runAfterContent);
 onHashChange(runAfterHashChange);
