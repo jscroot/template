@@ -7,7 +7,7 @@ import {runAfterSidebar,runAfterContent,runAfterHashChange} from "https://jscroo
 
 
 
-insertHTML(url.template.header,"sidebarcontainer",runAfterSidebar);
+insertHTML(url.template.sidebar,"sidebarcontainer",runAfterSidebar);
 
 let urlcontent=getContentURL();
 console.log(urlcontent);
