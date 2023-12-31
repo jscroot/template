@@ -83,7 +83,7 @@ export function getContentURL(){
         case "forms/wizard":
             return url.template.content+"forms/wizard.html";
         default:
-            return url.template.content+"dashboard/home.html";
+            return url.template.content+"home.html";
     }
 
 }
