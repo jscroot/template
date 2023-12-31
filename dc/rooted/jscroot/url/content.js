@@ -27,6 +27,8 @@ export function getContentURL(){
             return url.template.content+"kanban.html";
         case "todo":
             return url.template.content+"todo.html";
+        case "utility/settings":
+            return url.template.content+"utility/settings.html";
         default:
             return url.template.content+"dashboard/home.html";
     }
