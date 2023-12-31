@@ -10,7 +10,7 @@ function runAfterSidebar(){
     console.log("runaftersidebar");
     //addScriptInBody("assets/js/SimpleBar.js");
     //addScriptInBody("assets/js/jquery-3.6.0.min.js");
-    insertHTML(url.template.settings,"offcanvas",runAfterSettings);
+    //insertHTML(url.template.settings,"offcanvas",runAfterSettings);
 }
 
 function runAfterSettings(){
@@ -21,7 +21,7 @@ function runAfterSettings(){
 
 export function runAfterHeader(){
     console.log("runAfterHeader");
-    //insertHTML(url.template.search,"searchModal",runAfterSearch);
+    insertHTML(url.template.sidebar,"side-menu",runAfterSidebar);
 }
 
 function runAfterSearch(){
