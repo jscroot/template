@@ -1,5 +1,5 @@
 import {getHash} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.2/croot.js";
-import { url } from "https://jscroot.github.io/template/dc/starter/jscroot/url/config.js";
+import { url } from "https://jscroot.github.io/template/dc/rooted/jscroot/url/config.js";
 
 export function getContentURL(){
     let hashlink=getHash();
