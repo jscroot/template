@@ -29,6 +29,8 @@ export function getContentURL(){
             return url.template.content+"todo.html";
         case "utility/settings":
             return url.template.content+"utility/settings.html";
+        case "utility/pricing":
+            return url.template.content+"utility/pricing.html";
         default:
             return url.template.content+"dashboard/home.html";
     }
