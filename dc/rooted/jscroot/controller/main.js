@@ -9,13 +9,13 @@ import { getContentURL } from "https://jscroot.github.io/template/dc/rooted/jscr
 export function runAfterSidebar(){
     console.log("runaftersidebar");
     //addScriptInBody("assets/js/SimpleBar.js");
-    addScriptInBody("assets/js/jquery-3.6.0.min.js");
+    //addScriptInBody("assets/js/jquery-3.6.0.min.js");
     insertHTML(url.template.settings,"offcanvas",runAfterSettings);
 }
 
 function runAfterSettings(){
     console.log("runAfterSettings");
-    addScriptInBody("assets/js/rt-plugins.js");
+    //addScriptInBody("assets/js/rt-plugins.js");
     insertHTML(url.template.header,"app_header",runAfterHeader);
 }
 
@@ -36,7 +36,7 @@ function runAfterFooter(){
 
 function runAfterUserNavbar(){
     console.log("runAfterUserNavbar"); 
-    addScriptInBody("assets/js/app.js");
+    //addScriptInBody("assets/js/app.js");
 }
 
 
