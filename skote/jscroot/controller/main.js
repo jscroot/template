@@ -6,6 +6,11 @@ import { getURLContentJS } from "https://jscroot.github.io/template/skote/jscroo
 import { getContentURL } from "https://jscroot.github.io/template/skote/jscroot/url/content.js";
 
 
+export function runAfterHeader(){
+    console.log("runAfterHeader");
+    insertHTML(url.template.sidebar,"side-menu",runAfterSidebar);
+}
+
 function runAfterSidebar(){
     console.log("runaftersidebar");
     addScriptInBody("assets/libs/metismenu/metisMenu.min.js");
@@ -16,27 +21,11 @@ function runAfterSidebar(){
 function runAfterRightbar(){
     console.log("runAfterRightbar");
     addScriptInBody("assets/libs/simplebar/simplebar.min.js");
-    addScriptInBody("assets/js/app.js");
-    //insertHTML(url.template.header,"app_header",runAfterHeader);
-}
-
-export function runAfterHeader(){
-    console.log("runAfterHeader");
-    insertHTML(url.template.sidebar,"side-menu",runAfterSidebar);
-}
-
-function runAfterSearch(){
-    console.log("runAfterSearch");
-    insertHTML(url.template.footer,"footer",runAfterFooter);
+    insertHTML(url.template.footer,"footer_container",runAfterFooter);
 }
 
 function runAfterFooter(){
     console.log("runAfterFooter"); 
-    insertHTML(url.template.usernavbar,"usernavbar",runAfterUserNavbar);
-}
-
-function runAfterUserNavbar(){
-    console.log("runAfterUserNavbar"); 
     addScriptInBody("assets/js/app.js");
 }
 
@@ -51,5 +40,5 @@ export async function runAfterContent(){
 
 export function runAfterHashChange(evt){
     console.log("runAfterHashChange");
-    insertHTML(getContentURL(),"content_layout",runAfterContent);
+    insertHTML(getContentURL(),"content_container",runAfterContent);
 }
