@@ -43,5 +43,5 @@ export async function runAfterContent(){
 
 export function runAfterHashChange(evt){
     console.log("runAfterHashChange");
-    insertHTML(getContentURL(),"content",runAfterContent);
+    insertHTML(getContentURL(),"content_layout",runAfterContent);
 }
