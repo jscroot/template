@@ -12,7 +12,8 @@ insertHTML(url.template.header,"sidebarcontainer",runAfterSidebar);
 let urlcontent=getContentURL();
 console.log(urlcontent);
 if (urlcontent){
-    insertHTML(getContentURL(),"content",runAfterContent);
+    console.log("run content func");
+    insertHTML(getContentURL(),"content_layout",runAfterContent);
 }
 
 

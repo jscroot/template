@@ -40,6 +40,7 @@ function runAfterFooter(){
 
 export async function runAfterContent(){
     let urljs = getURLContentJS();
+    console.log(urljs);
     let module = await import(urljs);
     module.main();
     console.log(urljs);
