@@ -7,10 +7,26 @@ export function getContentURL(){
     switch (hashlink) {
         case "home":
             return url.template.content+"dashboard/home.html";
+        case "dashboard/ecommerce":
+            return url.template.content+"dashboard/ecommerce.html";
+        case "dashboard/project":
+            return url.template.content+"dashboard/project.html";
+        case "dashboard/crm":
+            return url.template.content+"dashboard/crm.html";
+        case "dashboard/banking":
+            return url.template.content+"dashboard/banking.html";
         case "about":
             return url.template.content+"about.html";
-        case "profile/info":
-            return url.template.content+"profile/info.html";
+        case "calander":
+            return url.template.content+"calander.html";
+        case "chat":
+            return url.template.content+"chat.html";
+        case "email":
+            return url.template.content+"email.html";
+        case "kanban":
+            return url.template.content+"kanban.html";
+        case "todo":
+            return url.template.content+"todo.html";
         default:
             return url.template.content+"dashboard/home.html";
     }
