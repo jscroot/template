@@ -6,11 +6,6 @@ import { getURLContentJS } from "https://jscroot.github.io/template/dc/starter/j
 import { getContentURL } from "https://jscroot.github.io/template/dc/starter/jscroot/url/content.js";
 
 
-export function runAfterHashChange(evt){
-    console.log("runAfterHashChange");
-    insertHTML(getContentURL(),"content",runAfterContent);
-}
-
 export function runAfterSidebar(){
     console.log("runaftersidebar");
     insertHTML(url.template.settings,"offcanvas",runAfterSettings);
@@ -31,9 +26,9 @@ function runAfterSearch(){
     insertHTML(url.template.footer,"footer",runAfterFooter);
 }
 
-function runAfterFooter(){
+async function runAfterFooter(){
     console.log("runAfterFooter");
-    addScriptInBody("assets/js/SimpleBar.js");
+    await addScriptInBody("assets/js/SimpleBar.js");
     addScriptInBody("assets/js/app.js");
 }
 
@@ -44,4 +39,9 @@ export async function runAfterContent(){
     let module = await import(urljs);
     module.main();
     console.log(urljs);
+}
+
+export function runAfterHashChange(evt){
+    console.log("runAfterHashChange");
+    insertHTML(getContentURL(),"content",runAfterContent);
 }

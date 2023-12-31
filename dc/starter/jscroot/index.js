@@ -8,15 +8,7 @@ import {runAfterSidebar,runAfterContent,runAfterHashChange} from "https://jscroo
 
 
 insertHTML(url.template.sidebar,"sidebarcontainer",runAfterSidebar);
-
-let urlcontent=getContentURL();
-console.log(urlcontent);
-if (urlcontent){
-    console.log("run content func");
-    insertHTML(getContentURL(),"content_layout",runAfterContent);
-}
-
-
+insertHTML(getContentURL(),"content_layout",runAfterContent);
 onHashChange(runAfterHashChange);
 
 
