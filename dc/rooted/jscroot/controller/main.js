@@ -36,7 +36,7 @@ function runAfterFooter(){
 
 function runAfterUserNavbar(){
     console.log("runAfterUserNavbar"); 
-    //addScriptInBody("assets/js/app.js");
+    addScriptInBody("assets/js/app.js");
 }
 
 
