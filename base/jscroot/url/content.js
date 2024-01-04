@@ -1,33 +1,32 @@
-import { url } from "https://jscroot.github.io/template/base/jscroot/url/config.js";
 import {getHash} from "https://cdn.jsdelivr.net/gh/jscroot/url@0.0.2/croot.js";
-
+import { url } from "https://jscroot.github.io/template/base/jscroot/url/config.js";
 
 export function getContentURL(){
-    let hashlink=parseInt(getHash());
+    let hashlink=getHash();
     switch (hashlink) {
-        case 1:
+        case "home":
             return url.content+"home.html";
-        case 21:
+        case "profile/passwords":
             return url.content+"profile/passwords.html";
-        case 22:
+        case "profile/mail":
             return url.content+"profile/mail.html";
-        case 23:
+        case "profile/accounts":
             return url.content+"profile/accounts.html";
-        case 3:
+        case "messages":
             return url.content+"messages.html";
-        case 41:
+        case "notifications/blocked":
             return url.content+"notifications/blocked.html";
-        case 42:
+        case "notifications/silenced":
             return url.content+"notifications/silenced.html";
-        case 43:
+        case "notifications/publish":
             return url.content+"notifications/publish.html";
-        case 44:
+        case "notifications/program":
             return url.content+"notifications/program.html";
-        case 5:
+        case "explore":
             return url.content+"explore.html";
-        case 6:
+        case "saved":
             return url.content+"saved.html";
-        case 7:
+        case "logout":
             return url.content+"logout.html";
         default:
             return url.content+"home.html";
@@ -38,31 +37,31 @@ export function getContentURL(){
 
 
 export function getURLContentJS(){
-    let hashlink=parseInt(getHash());
+    let hashlink=getHash();
     switch (hashlink) {
-        case 1:
+        case "home":
             return url.contentview+"home.js";
-        case 21:
+        case "profile/passwords":
             return url.contentview+"profile/passwords.js";
-        case 22:
+        case "profile/mail":
             return url.contentview+"profile/mail.js";
-        case 23:
+        case "profile/accounts":
             return url.contentview+"profile/accounts.js";
-        case 3:
+        case "messages":
             return url.contentview+"messages.js";
-        case 41:
+        case "notifications/blocked":
             return url.contentview+"notifications/blocked.js";
-        case 42:
+        case "notifications/silenced":
             return url.contentview+"notifications/silenced.js";
-        case 43:
+        case "notifications/publish":
             return url.contentview+"notifications/publish.js";
-        case 44:
+        case "notifications/program":
             return url.contentview+"notifications/program.js";
-        case 5:
+        case "explore":
             return url.contentview+"explore.js";
-        case 6:
+        case "saved":
             return url.contentview+"saved.js";
-        case 7:
+        case "logout":
             return url.contentview+"logout.js";
         default:
             return url.contentview+"home.js";
